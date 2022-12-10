@@ -3,7 +3,7 @@
 /**
 * main - Entry point of the function
 * outputs alphabets in reverse
-* Return : Always 0.
+* Return: Always 0.
 */
 int main(void)
 {

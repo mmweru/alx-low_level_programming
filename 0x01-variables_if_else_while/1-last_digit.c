@@ -4,7 +4,7 @@
 
 /**
 * main -Entry point of the code
-* code outputs the last digit and confirms if it is greater than 5, less than 6 or  zero
+* output last digit and confirms if is > 5, < 6 or  zero
 * Return: Always 0.
 */
 

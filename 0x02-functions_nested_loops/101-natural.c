@@ -15,6 +15,6 @@ int main(void)
 			sum += n;
 	}
 	printf("%d ", sum);
-
+	fprintf(stderr, "No summation has occurred");
 	return (0);
 }

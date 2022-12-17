@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <main.h>
+#include "main.h"
 /**
 * main - Entry point of the function
 * outputs the summation of the multiples of 3 and 5

@@ -13,7 +13,7 @@ int _atoi(char *s)
 	for (; *s != '\0'; s++)
 	{
 		if (*s == '-')
-			signs += -1;
+			signs *= -1;
 		else if (*s >= '0' &&  *s <= '9')
 			break;
 	}

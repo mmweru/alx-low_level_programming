@@ -1,1 +1,1 @@
-Folder on pointers, stringd and arrays
+Strings, pointers and arrays in C

@@ -4,7 +4,7 @@
 * @src: string to be copied
 * @dest: stores the pointer to be outputed
 * @n: the size of the string
-* Return: Always 0.
+* Return: the copied string in a pointer dest.
 */
 char *_strncpy(char *dest, char *src, int n)
 {
@@ -19,6 +19,8 @@ char *_strncpy(char *dest, char *src, int n)
 		dest[i] = src[i];
 	}
 	for (i = j; i < n; i++)
+	{
 		dest[i] = '\0';
+	}
 	return (dest);
 }

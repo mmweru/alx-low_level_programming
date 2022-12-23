@@ -10,8 +10,8 @@
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
 	int i, j, k1, k2;
-	char a1[n];
-	char a2[n];
+	int a1[size_r];
+	int a2[size_r];
 
 	for (i =0; i < size_r; i++)
 	{
@@ -25,6 +25,6 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		k1 = 10 * k1 + a1[i];
 		k2 = 10 * k2 + a2[i];
 	}
-	r = k1 + k2;
+	*r = k1 + k2;
 	return (r);
 }

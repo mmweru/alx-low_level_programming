@@ -9,22 +9,45 @@
 */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-	int i, j, k1, k2;
-	int a1[size_r];
-	int a2[size_r];
+	int  k1 = 0, k2 = 0, op, bg, dr1, dr2, add = 0;
 
-	for (i =0; i < size_r; i++)
+	while (*(n1 + k1) != '\0')
+		k1++;
+	while (*(n2 + k2) != '\0')
+		k2++;
+	if (k1 >= k2)
+		bg = k1;
+	else
+		bg = k2;
+	if (size_r <= bg + 1)
+		return (0);
+	r[bg + 1] = '\0';
+	k1--, k2--, size_r--;
+	dr1 = *(n1 + k1) - 48, dr2 = *(n2 + k2) - 48;
+	while (bg >= 0)
 	{
-		a1[i] = n1[i];
-		a2[i] = n2[i];
+		op = dr1 + dr2 + add;
+		if (op >= 10)
+			add = op / 10;
+		else
+			add = 0;
+		if (op > 0)
+			*(r + bg) = (op % 10) + 48;
+		else
+			*(r + bg) = '0';
+		if (k1 > 0)
+			k1--, dr1 = *(n1 + k1) - 48;
+		else
+			dr1 = 0;
+		if (k2 > 0)
+			k2--, dr2 = *(n2 + k2) - 48;
+		else
+			dr2 = 0;
+		bg--, size_r--;
 	}
-	k1 = 0;
-	k2 = 0;
-	for (j = 0; j < size_r; j++, i++)
-	{
-		k1 = 10 * k1 + a1[i];
-		k2 = 10 * k2 + a2[i];
-	}
-	*r = k1 + k2;
-	return (r);
+	if (*(r) == '0')
+		return (r + 1);
+	else
+		return (r);
 }
+

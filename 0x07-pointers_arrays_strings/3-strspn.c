@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* unsigned int _strspn - function that returns the number of bytes.
+* _strspn - function that returns the number of bytes
 * @s: the internal segment
 * @accept: bytes to be compared with
 * Return: the number of bytes in the internal segment.

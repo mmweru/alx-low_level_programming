@@ -4,7 +4,8 @@
 * _strpbrk - function that checks for bytes
 * @s: the string we first look for the characters
 * @accept: string we use to compare
-* Return: a pointer to the stringif any and null if not.
+* Return: a pointer to the string
+* if any and null if not.
 */
 char *_strpbrk(char *s, char *accept)
 {

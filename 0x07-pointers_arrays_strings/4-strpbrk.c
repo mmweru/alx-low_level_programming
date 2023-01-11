@@ -1,8 +1,8 @@
 #include "main.h"
 #define NULL 0
 /**
-* _strpbrk - function that checks for bytes
-* @s: the string we first look for the characters
+* _strpbrk - return pointer to bytes
+* @s: the string to search
 * @accept: string we use to compare
 * Return: a pointer to the string
 * if any and null if not.

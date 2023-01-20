@@ -4,11 +4,12 @@
 * print_name - outputs the name
 * @name: name to be outputed
 * @f: pointer to name
-* Return: Nothing.
+* Return: nothing.
 */
 void print_name(char *name, void (*f)(char *))
 {
-	if (!name || !f)
+	if (name == NULL || f == NULL)
 		return;
+
 	f(name);
 }

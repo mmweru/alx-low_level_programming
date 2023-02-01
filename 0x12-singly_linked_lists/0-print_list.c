@@ -1,8 +1,9 @@
 #include "lists.h"
+#include <stdio.h>
 /**
 * print_list - outputs a
 * list of all elements
-* @h: list_h list
+* @h: list_t list
 * Return: number of nodes
 */
 
@@ -12,11 +13,11 @@ size_t print_list(const list_t *h)
 
 	while (h)
 	{
-		if (h->str == NULL)
+		if (!h->str)
 			printf("[0] (nil)\n");
 
 		else
-			printf("[%d] %s\n", h->len, h->str);
+			printf("[%u] %s\n", h->len, h->str);
 
 		nodes++;
 		h = h->next;

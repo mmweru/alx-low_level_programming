@@ -2,7 +2,7 @@
 /**
 * set_bit - converts the value
 * of an index at a particular position
-* @*n: integer to be set
+* @n: integer to be set
 * @index: index of the integer
 * Return: 1 if worked -1 error
 */

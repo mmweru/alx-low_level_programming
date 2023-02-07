@@ -1,1 +1,1 @@
-C programming, variables, debugging and conditional statements
+Bit manipulation in C

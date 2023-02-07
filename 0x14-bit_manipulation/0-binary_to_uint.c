@@ -1,8 +1,18 @@
+<<<<<<< HEAD
 /**
 * binary_to_uint - converts binary
 * to unsigned int
 * @b: number to be converted to int
 * Return: converyed number
+=======
+#include "main.h"
+/**
+* binary_to_uint - converts binary to
+* unsigned int
+* @b: the number to be converted to
+* int
+* Return: converted number
+>>>>>>> 64caa32c24305d2ab0479c44a6e35a5d7ad3e370
 */
 unsigned int binary_to_uint(const char *b)
 {
@@ -31,3 +41,8 @@ unsigned int binary_to_uint(const char *b)
 	}
 	return (uint);
 }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 64caa32c24305d2ab0479c44a6e35a5d7ad3e370

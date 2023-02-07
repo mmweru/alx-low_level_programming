@@ -1,5 +1,6 @@
 #include <unistd.h>
 
+<<<<<<< HEAD
 
 /**
 
@@ -21,4 +22,16 @@ int _putchar(char c)
 
 	return (write(1, &c, 1));
 
+=======
+/**
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+>>>>>>> 64caa32c24305d2ab0479c44a6e35a5d7ad3e370
 }

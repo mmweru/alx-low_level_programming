@@ -2,8 +2,8 @@
 /**
 * append_text_to_file - appends a text
 * @filename: the name of the file
-* @text_content - string to add at the end
-* of the file
+* @text_content: string to add at the
+* end of the file
 * Return: 1 success, -1 failure
 */
 int append_text_to_file(const char *filename, char *text_content)
@@ -23,5 +23,6 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (o == -1 || w == -1)
 		return (-1);
 	close(o);
+
 	return (1);
 }
